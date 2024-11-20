@@ -47,7 +47,12 @@ class eirudo_ytresponsive_plugin_about {
 
 		<div class="changelog point-releases">
 			<h3>Maintenance and Security Releases</h3>
-
+<p>
+<strong>Version 3.2.4</strong>
+<ul>
+<li>- Small fixes: Add title="" attributes to the iframe</li>
+</ul>
+</p>	
 <p>
 <strong>Version 3.2.3</strong>
 <ul>

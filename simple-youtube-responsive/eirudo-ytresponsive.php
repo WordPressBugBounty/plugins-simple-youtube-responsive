@@ -4,7 +4,7 @@ Plugin Name: Simple YouTube Responsive
 Plugin URI: https://eirudo.com/portfolios/wordpress-plugins/youtube-responsive
 Text Domain: simple-youtube-responsive
 Description: Embed YouTube video and Responsive using simple shortcode, and keep the video's Aspect Ratio. AMP & Lazy Load supported.
-Version: 3.2.3
+Version: 3.2.4
 Author: Eirudo
 Author URI: https://eirudo.com/
 License: GPL2
@@ -16,7 +16,7 @@ if ( !defined('ABSPATH') ){
 	die;
 }
 
-define( 'EIRUDO_YTRESPONSIVE_VER', '3.2.3');
+define( 'EIRUDO_YTRESPONSIVE_VER', '3.2.4');
 define( 'EIRUDO_YTRESPONSIVE_DIR', plugin_dir_path(__FILE__) );
 define( 'EIRUDO_YTRESPONSIVE_URL', plugin_dir_url(__FILE__) );
 

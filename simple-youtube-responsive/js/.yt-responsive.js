@@ -29,6 +29,9 @@ ERDYTready( function(){
 				}
 				erdyti.setAttribute( 'allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' );
 				erdyti.setAttribute( 'src', this.dataset.src );
+				if(this.dataset.title){
+					erdyti.setAttribute( 'title', this.dataset.title );
+				}
 			var erdytip = this.parentNode;
 				erdytip.innerHTML = '';
 				erdytip.appendChild( erdyti );
