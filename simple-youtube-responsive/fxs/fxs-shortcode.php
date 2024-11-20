@@ -250,7 +250,7 @@ function eirudo_ytresponsive( $a ) {
 				$imgThumb = esc_url('https://i.ytimg.com/vi/' . $videoId . '/' . $imgQuality . '.jpg');
 			}
 			$withTitle = !empty( $titleAttr ) ? 'data-' . $titleAttr : '';
-			$embedContent = '<div class="erd-ytplay" id="erdytp-' . $videoId . '-' . $uniqid . '" data-vid="' . $videoId . '"' . $withTitle . ' ' . $titleAttr . '  data-src="'.esc_url('https://www.youtube.com/embed/'.$videoId.$paramsFixed).'"'.(eirudo_ytrp_stringtobool($allowFullscreen) ? ' data-allowfullscreen="true"':'').'><img src="' . $imgThumb . '" alt="YouTube video" /></div>';
+			$embedContent = '<div class="erd-ytplay" id="erdytp-' . $videoId . '-' . $uniqid . '" data-vid="' . $videoId . '"' . $withTitle . ' ' . $titleAttr . '  data-src="'.esc_url('https://www.youtube.com/embed/'.$videoId.$paramsFixed).'"'.(eirudo_ytrp_stringtobool($allowFullscreen) ? ' data-allowfullscreen="true"':'').'><img src="' . $imgThumb . '" alt="' . ( !empty( $atts['title'] ) ? esc_attr( $atts['title'] ) : 'YouTube Video' ) . '" /></div>';
 		}else{
 			// Build iframe embed
 			$withTitle = !empty( $titleAttr ) ? ' ' . $titleAttr : '';

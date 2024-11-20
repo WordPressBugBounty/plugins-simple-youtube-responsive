@@ -47,6 +47,13 @@ class eirudo_ytresponsive_plugin_about {
 
 		<div class="changelog point-releases">
 			<h3>Maintenance and Security Releases</h3>
+			
+<p>
+<strong>Version 3.2.5</strong>
+<ul>
+<li>- Small fixes on Cover alt attributes when the title="" has been set</li>
+</ul>
+</p>
 <p>
 <strong>Version 3.2.4</strong>
 <ul>

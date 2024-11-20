@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/Eirudo
 Tags: youtube, player, embed, responsive, shortcode
 Requires at least: 2.5
 Tested up to: 6.7
-Stable tag: 3.2.4
+Stable tag: 3.2.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,8 @@ https://eirudo.com/files/simple-youtube-responsive-screenshot-4.jpg
 
 
 == Changelog ==
+= 3.2.5 =
+* Small fixes on Cover alt attributes when the title="" has been set
 = 3.2.4 =
 * Add title="" attributes to the iframe
 = 3.2.3 =
