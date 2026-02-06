@@ -254,10 +254,12 @@ function eirudo_ytresponsive( $a ) {
 		}else{
 			// Build iframe embed
 			$withTitle = !empty( $titleAttr ) ? ' ' . $titleAttr : '';
-			$embedContent = '<iframe id="erdyti-' . $uniqid . '"' . $withTitle . ' src="'.esc_url('https://www.youtube.com/embed/'.$videoId.$paramsFixed).'" frameborder="0"'.(eirudo_ytrp_stringtobool($allowFullscreen) ? ' allowfullscreen=""':'').'></iframe>';
+			$embedContent = '<iframe id="erdyti-' . $uniqid . '"' . $withTitle . ' src="'.esc_url('https://www.youtube.com/embed/'.$videoId.$paramsFixed).'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" '.(eirudo_ytrp_stringtobool($allowFullscreen) ? ' allowfullscreen=""':'').'></iframe>';
 		}
 		
 		$html = '<div id="' . $divId . '" data-id="' . $videoId . '" class="erd-youtube-responsive' . $divClasses . '" style="' . $divStyle . '"><div style="' . $cssRatio . '">' . $embedContent . '</div></div>';
+		
+		$html = apply_filters( 'simple_yt_responsive_html', $html );
 		
 		// Check settings if only embed in shortcode page 
 		//if ( $erdyt_options['printedscripts'] == 'embedonly' ){

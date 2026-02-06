@@ -39,7 +39,7 @@ class eirudo_ytresponsive_plugin_about {
 		<h1>Simple YouTube Responsive</h1>
 
 		<p class="about-text">
-			Thanks for installing Simple YouTube Responsive.<br/>Please give me a <a href="https://wordpress.org/support/plugin/simple-youtube-responsive/reviews/" target="_blank">review</a> on Wordpress plugin directory if you think this plugin is useful.</p>
+			Thanks for installing Simple YouTube Responsive!<br/>If you find this plugin useful, I’d really appreciate a <a href="https://wordpress.org/support/plugin/simple-youtube-responsive/reviews/" target="_blank">review</a> on the WordPress Plugin Directory.</p>
 
 		<div class="wp-badge" style="background-image:url(https://ps.w.org/simple-youtube-responsive/assets/icon-256x256.png);background-color:#bb0000;">
 			Version <?php echo EIRUDO_YTRESPONSIVE_VER; ?>		</div>
@@ -47,99 +47,112 @@ class eirudo_ytresponsive_plugin_about {
 
 		<div class="changelog point-releases">
 			<h3>Maintenance and Security Releases</h3>
-			
+<p>
+<strong>Version 3.2.6</strong>
+<ul>
+<li>- Updated to the new YouTube iframe embed code. Some adjustments were needed to fully follow the official YouTube embed.</li>
+<li>- Added a new filter: simple_yt_responsive_html, in case you want to modify the HTML output yourself.</li>
+<li>- Fixed the YouTube thumbnail size options. Some URLs had changed, causing thumbnails to no longer display.</li>
+</ul>
+</p>		
 <p>
 <strong>Version 3.2.5</strong>
 <ul>
-<li>- Small fixes on Cover alt attributes when the title="" has been set</li>
+<li>- Small fix for cover alt attributes when the title="" attribute is used</li>
 </ul>
 </p>
 <p>
 <strong>Version 3.2.4</strong>
 <ul>
-<li>- Small fixes: Add title="" attributes to the iframe</li>
+<li>- Added title="" attribute to the iframe</li>
 </ul>
 </p>	
 <p>
 <strong>Version 3.2.3</strong>
 <ul>
-<li>- Small fixes: Fix shortcode documentation (thanks to dbrossa).</li>
+<li>- Fixed shortcode documentation (thanks dbrossa!)</li>
 </ul>
-</p>		
+</p>	
+<p>
+<strong>Version 3.2.2</strong>
+<ul>
+<li>- Tested up to WordPress 6.5.2</li>
+</ul>
+</p>	
 <p>
 <strong>Version 3.2.1</strong>
 <ul>
-<li>- Small fixes: Missing double quote from HTML. Now has been fixed.</li>
+<li>- Small HTML fix (missing double quotes)</li>
 </ul>
 </p>
 <p>
 <strong>Version 3.2</strong>
 <ul>
-<li>- Small fixes: Missing inline CSS attributes. Now has been fixed.</li>
+<li>- Fixed missing inline CSS attributes</li>
 </ul>
 </p>
 <p>
 <strong>Version 3.1</strong>
 <ul>
-<li>- Small fixes: Remove double slashes from Javascript link</li>
+<li>- Removed double slashes from JavaScript links</li>
 </ul>
 </p>
 <p>
 <strong>Version 3.0</strong>
 <ul>
-<li>- Prevent XSS attacks via Shortcode (thanks to <strong>Darius Sveikauskas</strong> and <strong>yuyudhn</strong> from Patchstack for notifying)</li>
-<li>- Optimized database usage</li>
+<li>- Improved security by preventing XSS via shortcode (thanks to <strong>Darius Sveikauskas</strong> and <strong>yuyudhn</strong> from Patchstack for notifying)</li>
+<li>- Database usage optimization</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.5</strong>
 <ul>
-<li>- Bug Fixes: On Lazy Load mode, sometimes the width of video not full 100% as it's container element (as default), caused by Elementor's CSS</li>
+<li>- Fixed an issue where lazy-loaded videos were sometimes not full width (caused by Elementor CSS)</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.4</strong>
 <ul>
-<li>- Bug Fixes: video player floated to the left on mobile devices</li>
+<li>- Fixed video alignment issue on mobile devices</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.3</strong>
 <ul>
-<li>- Now you can add your own supported parameters on each shortcode (for advanced use only).<br/>See <a href="https://developers.google.com/youtube/player_parameters#Parameters" target="_blank">https://developers.google.com/youtube/player_parameters#Parameters</a> for complete list parameters.</li>
+<li>- Added support for custom YouTube parameters per shortcode (advanced users) .<br/>See <a href="https://developers.google.com/youtube/player_parameters#Parameters" target="_blank">https://developers.google.com/youtube/player_parameters#Parameters</a> for complete list parameters.</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.2.2</strong>
 <ul>
-<li>- More custom parameters added: Loop, Fullscreen, Show video controls bar, Start at, End at</li>
+<li>- Added more parameters: loop, fullscreen, controls, start time, end time</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.2.1</strong>
 <ul>
-<li>- Little optimization and remove unecessary codes.</li>
+<li>- Minor cleanup and removed unnecessary code</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.2.0</strong>
 <ul>
-<li>- Bug Fixes break Wordpress after last update.</li>
+<li>- Fixed an issue that could break WordPress after updating</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.1.0</strong>
 <ul>
-<li>- Bug Fixes on JavaScript Conflict with another plugin. Special thanks to <a href="https://wordpress.org/support/users/jkeasley2/" target="_blank">@jkeasley2</a> for helping resolve this bugs.</li>
+<li>- Fixed JavaScript conflicts with other plugins. Big thanks to <a href="https://wordpress.org/support/users/jkeasley2/" target="_blank">@jkeasley2</a> for the help!</li>
 </ul>
 </p>
 <p>
 <strong>Version 2.0.1</strong>
 <ul>
-<li>- Bug Fixes on AMP</li>
-<li>- Added Troubleshoot options: Javascript placing (sometimes YouTube not working if you using Elementor Pro and using Custom Footer Section)</li>
-<li>- Correcting typo on Shortcodes guide</li>
-<li>- Placing Stylesheet on Header (previously on footer)</li>
+<li>- Fixed AMP-related issues</li>
+<li>- Added troubleshooting options for JavaScript placement</li>
+<li>- Fixed typo in shortcode guide (use center="" for auto centering)</li>
+<li>- Stylesheet is now loaded in the header instead of the footer</li>
 </ul>
         </p>
 			<p>

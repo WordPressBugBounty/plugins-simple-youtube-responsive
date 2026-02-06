@@ -212,11 +212,12 @@ eirudo_ytrp_options_updater();
 				'section' => 'eirudo_ytresponsive_option_lazyload',
 				'type' => 'select',
 				'options' => array(
-					'maxresdefault' => 'Max Resolution (1280x720)',
-					'sddefault' => 'Standart Resolution (640x480)',
-					'hqdefault' => 'Hiqh Resolution (480x360)',
-					'mqdefault' => 'Medium Resolution (320x180)',
-					'default' => 'Default (120x90)'
+					'maxresdefault' => 'Max Resolution if available (1280x720) 16:9',
+					'hq720' => 'HQ (1280x720) 16:9',
+					'sddefault' => 'Standart Resolution (640x480) 4:3',
+					'hqdefault' => 'Hiqh Resolution (480x360) 4:3',
+					'mqdefault' => 'Medium Resolution (320x180) 16:9',
+					'default' => 'Default (120x90) 4:3'
 				),
 				'placeholder' => '',
 				'helper' => 'If you enabling Lazy Load, YouTube embed will load thumbnail instead, and load the video player when clicked.<br/>Choose thumbnail image size version for this.',

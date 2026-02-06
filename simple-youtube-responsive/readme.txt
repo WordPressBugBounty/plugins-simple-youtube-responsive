@@ -3,34 +3,32 @@ Contributors: Eirudo
 Donate link: https://www.paypal.me/Eirudo
 Tags: youtube, player, embed, responsive, shortcode
 Requires at least: 2.5
-Tested up to: 6.7
-Stable tag: 3.2.5
+Tested up to: 6.9.1
+Stable tag: 3.2.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 
-Embed responsive YouTube videos using simple shortcode. Lazy Load supported.
+Easily embed responsive YouTube videos using a simple shortcode. Lazy load included.
 
 == Description ==
 
-Embed YouTube videos and keept their aspect ratio, just using simple shortcode.
+A lightweight plugin to embed YouTube videos while keeping the correct aspect ratio — all with a simple shortcode.
 
-* Simple shortcode, can be used in the posts or widgets.
-* Using default YouTube Embed Code (iframe), but make it responsive
-* Custom aspect ratio, if you want set different porpotion size.
-* Auto centered position. So if you insert it on your post section, the video always on center-aligned.
-* Lazy Load supported.
-* 100% Free! And no ads or even trackers inside.
-
-
+* Very simple shortcode. Use it in posts or widgets.
+* Uses the default YouTube iframe embed, but fully responsive.
+* Custom aspect ratio if you want a different video size.
+* Automatically centered, so your video always looks neat in your content.
+* Lazy load support to improve performance.
+* 100% free — no ads, no trackers, no funny business.
 
 
 == Installation ==
 
-1. Install plugin from Wordpress menu Plugins > Add New
+1. Install the plugin from **Plugins > Add New**
 2. Activate the plugin
-3. Yay! Well done.
-4. Insert your shortcode to the post, or even widgets. Multiple shortcode is supported.
+3. Done 🎉
+4. Insert the shortcode into your post or widget (multiple shortcodes are supported).
 
 
 == Screenshots ==
@@ -42,73 +40,106 @@ https://eirudo.com/files/simple-youtube-responsive-screenshot-4.jpg
 
 
 == Changelog ==
+
+= 3.2.6 =
+* Updated to the new YouTube iframe embed code. Some adjustments were needed to fully follow the official YouTube embed.
+* Added a new filter: simple_yt_responsive_html, in case you want to modify the HTML output yourself.
+* Fixed the YouTube thumbnail size options. Some URLs had changed, causing thumbnails to no longer display.
+
 = 3.2.5 =
-* Small fixes on Cover alt attributes when the title="" has been set
+* Small fix for cover alt attributes when the title="" attribute is used
+
 = 3.2.4 =
-* Add title="" attributes to the iframe
+* Added title="" attribute to the iframe
+
 = 3.2.3 =
-* Fix Shortcode documentation (thanks to dbrossa)
+* Fixed shortcode documentation (thanks dbrossa!)
+
 = 3.2.2 =
-* Tested to Wordpress 6.5.2
+* Tested up to WordPress 6.5.2
+
 = 3.2.1 =
-* Small fixes: Missing double quote from HTML. Now has been fixed.
+* Small HTML fix (missing double quotes)
+
 = 3.2 =
-* Small fixes: Missing inline CSS attributes. Now has been fixed.
+* Fixed missing inline CSS attributes
+
 = 3.1 =
-* Small fixes: Remove double slashes from Javascript link
+* Removed double slashes from JavaScript links
+
 = 3.0 =
-* Prevent XSS attacks via Shortcode (thanks to Darius Sveikauskas and yuyudhn from Patchstack for notifying)
-* Optimized database usage
+* Improved security by preventing XSS via shortcode (Thanks to Darius Sveikauskas and yuyudhn from Patchstack for the report!)
+* Database usage optimization
+
 = 2.5 =
-* Bug Fixes: On Lazy Load mode, sometimes the width of video not full 100% as it's container element (as default), caused by Elementor's CSS
+* Fixed an issue where lazy-loaded videos were sometimes not full width (caused by Elementor CSS)
+
 = 2.4 =
-* Bug Fixes: video player floated to the left on mobile devices
+* Fixed video alignment issue on mobile devices
+
 = 2.3 =
-* Now you can add your own supported parameters on each shortcode (for advanced use only). See https://developers.google.com/youtube/player_parameters#Parameters for complete list parameters.
+* Added support for custom YouTube parameters per shortcode (advanced users) Full list: https://developers.google.com/youtube/player_parameters#Parameters
+
 = 2.2.2 =
-* More custom parameters added: Loop, Fullscreen, Show video controls bar, Start at, End at
+* Added more parameters: loop, fullscreen, controls, start time, end time
+
 = 2.2.1 =
-* Little optimization and remove unecessary codes
+* Minor cleanup and removed unnecessary code
+
 = 2.2.0 =
-* Bug Fixes break Wordpress after update
+* Fixed an issue that could break WordPress after updating
+
 = 2.1.0 =
-* Bug Fixes on JavaScript Conflict with another plugin. Special thanks to @jkeasley2 for helping resolve this bugs.
+* Fixed JavaScript conflicts with other plugins. Big thanks to @jkeasley2 for the help!
+
 = 2.0.1 =
-* Bug Fixes on AMP
-* Added Troubleshoot options: Javascript placing (sometimes YouTube not working if you using Elementor Pro and using Custom Footer Section). And now you can choose how to place the JavaScript.
-* Typo on shortcode guide. For automatic centered, use center="" attribute
-* Placing Stylesheet on Header (previously on footer)
+* Fixed AMP-related issues
+* Added troubleshooting options for JavaScript placement
+* Fixed typo in shortcode guide (use center="" for auto centering)
+* Stylesheet is now loaded in the header instead of the footer
+
 = 2.0.0 =
-* Add Plugin Option page on Administration Menu.
-* Lazy Load supported 
-* Custom video thumbnails on Lazy Load mode.
+* Added plugin settings page in the admin menu
+* Lazy load support
+* Custom thumbnails for lazy-loaded videos
+
 = 1.2.6 =
-* Typo in ReadMe and Description
+* Fixed typos in ReadMe and description
+
 = 1.2.5 =
-* Little Bug, Fixed.
-* New Contributor
+* Minor bug fixes
+* New contributor
 * New documentation link
+
 = 1.2.4 =
-* Fix Bug: Break post when AMP plugin not installed.
+* Fixed an issue where posts could break if AMP was not installed
+
 = 1.2.3 =
-* Add: Google AMP supported
+* Added Google AMP support
+
 = 1.2.2 =
-* Add: Alias attribute for inserting YouTube ID. You can using "video" or "v" tags
+* Added alias attributes for YouTube ID ("video" or "v")
+
 = 1.2.1 =
-* Fix Bug: PHP Error Divided by zero.
-* Remove: Default Max Width (600px).
+* Fixed PHP division-by-zero error
+* Removed default max width (600px)
+
 = 1.2 =
-* Fix Bug: Mixed Content on https sites. I'm Sorry, forgot to make https version for embed code :3
+* Fixed mixed-content issues on HTTPS sites (oops 😅)
+
 = 1.1 =
-* Fix Bug: Failed to Install
-* Some typos
+* Fixed installation issues
+* Minor typos
+
 = 1.0 =
-* We just born. Nothing to see here.
+* First release 🚀
 
 
 == Upgrade Notice ==
-* Just install this plugin.
-* If you update this plugin from version 1x.x, make sure you reactivate manually from plugin page.
+
+* Just update or install the plugin as usual.
+* If you’re upgrading from version 1.x.x, please reactivate the plugin manually.
+
 
 == Arbitrary section ==
 
@@ -116,9 +147,9 @@ https://eirudo.com/files/simple-youtube-responsive-screenshot-4.jpg
 == A brief Markdown Example ==
 
 Pros:
-1. Simple, only using shortcode to use for individual video each shortcode
-2. Lazy Load supported
-3. Custom parameters for advanced use
+1. Simple and lightweight — one shortcode per video
+2. Lazy load support
+3. Extra parameters available for advanced users
 
 Cons:
-1. Only for simple use,not for advanced playlist. Embedding one video for each shortcode.
+1. Designed for simple embeds only (no playlist support, one video per shortcode)
